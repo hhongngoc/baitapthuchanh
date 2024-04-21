@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>BAITAPTHUCHANH</title>
+    <link rel="stylesheet" href="la.css">
+</head>
+<style>
+/* Basic styles for the layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+/* Header styling */
+.banner {
+    background-color: #4252fe;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation with dropdown */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative; /* Allows dropdown positioning */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    top: 100%; /* Ensures dropdown is below parent item */
+    left: 0; /* Ensures dropdown aligns with parent item */
+}
+
+.dropdown li {
+    width: 150px; /* Width of dropdown items */
+}
+
+.dropdown li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #444; /* Hover effect for dropdown items */
+}
+
+/* Show the dropdown when hovering over the parent item */
+nav ul li:hover .dropdown {
+    display: block; /* Makes the dropdown visible on hover */
+}
+
+/* Layout for main content area */
+aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+section {
+    flex: 2;
+    padding: 20px;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Changes flex direction for smaller screens */
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: none; /* Initially hides the menu for smaller screens */
+        flex-direction: column; /* Stacks menu items vertically */
+    }
+
+    nav ul.open {
+        display: block; /* Shows the menu when needed */
+    }
+
+    /* Handle dropdowns for smaller screens */
+    .dropdown {
+        position: relative; /* Allows dropdown to position correctly */
+        top: auto;
+        left: auto;
+    }
+
+    aside {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+.img{
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+<body>
+    <!-- Header with a banner -->
+    <header>
+        <div class="banner">
+          <h1>Đại Học Công Nghiệp TPHCM</h1>
+        </div>
+      </header>
+
+    <!-- Navigation with a dropdown menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Đào tạo</a>
+                <ul class="dropdown">
+                    <li><a href="#">Đồ họa</a></li>
+                    <li><a href="#">Web</a></li>
+                    <li><a href="#">Mạng</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch Vụ</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area with an article on the right and aside on the left -->
+    <main>
+        <div class="container">
+            <!-- Aside (sidebar) on the left -->
+            <aside>
+                <h2>Tuyển sinh trường đại học Công Nghiệp TP.HCM</h2>
+                <p>Thông báo tuyển sinh hệ chính quy năm 2024</p>               
+            </aside>
+
+            <!-- Main content with an article on the right -->
+            <section>
+                <article>
+                    <h2>Triết lý giáo dục của trường Đại học Công Nghiệp TP.HCM</h2>
+                    <p>
+                        Trường Đại học Công Nghiệp TP.HCM hướng đến sự phát triển con người, đề cao tính độc lập, sáng tạo và phục vụ cộng đồng. Toàn thể giáo viên và nhân viên của trường cũng tham gia vào quá trình giáo dục để giúp sinh viên trở thành một công dân tốt 
+                    <ul>
+                        <li>Chính trực, trách nhiệm và yêu thương con người</li>
+                        <li>Khao khát khám phá và phát triển khoa học công nghệ</li>
+                        <li>Có kiến thức, kỹ năng chuyên môn vững chắc</li>
+                        <li>Có hoài bão, đóng góp cho cộng đồng và xã hội</li>
+
+                    </ul>
+                    
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <main>
+        <div class="container">
+            <!-- Aside (sidebar) on the left -->
+            <aside>
+                <h2>Tầm nhìn sứ mạng của trường</h2>
+                <p> Trở thành Trường đại học hàng đầu của Việt Nam, tiên phong trong lĩnh vực giáo dục và nghiên cứu ứng dụng, chuyển giao công nghệ và đổi mới sáng tạo</p>               
+            </aside>
+
+            <!-- Main content with an article on the right -->
+            <section>
+                <article>
+                    <h2>99% thí sinh dự thi đánh giá năng lực đợt 1 tại Đại học Công nghiệp Thành phố Hồ Chí Minh (IUH)</h2>
+                    <p> 
+                        Sáng ngày 7.4 tại Đại học Công nghiệp TP.HCM diễn ra kỳ thi đánh giá năng lực đợt 1 do ĐHQG - HCM tổ chức cụm thi số 10.
+
+                        Gần 200 giảng viên, nhân viên và sinh viên của Đại học Công nghiệp TP.HCM có mặt sớm tại cụm thi số 10 để chỉ đường hỗ trợ thí sinh đến đúng điểm thi và tiếp sức nước uống cho thí sinh.
+
+                        “Là đơn vị có kinh nghiệm trong việc tổ chức và lên phương án tổ chức hội đồng thi (từ cơ sở vật chất, nhân sự đến việc bố trí chu đáo các phương án an toàn thuận lợi cho thí sinh tham dự các kỳ thi…). Công tác tổ chức tại IUH đã chuẩn bị kỹ lưỡng, kỳ thi sáng nay đã diễn ra thuận lợi và thành công. Với tỷ lệ dự thi 99% với số lượng 3582/3617 thí sinh, nhìn chung kỳ thi đợt 1 đã diễn ra an toàn” TS Nguyễn Trung Nhân – Trưởng phòng Đào tạo IUH cho biết.
+                    </ul>
+                    
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer at the bottom -->
+    <footer>
+        <div class="footer-content">
+            <p>Trường đại học Công Nghiệp TP.HCM</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#flip").click(function(){
+    $("#panel").toggle("slow");
+    });
+    });
+    </script>
+
+</body>
+</html>
